@@ -1,0 +1,94 @@
+
+.navbar-icons {
+    display: none;
+}
+.navbar-icons .fa {
+    color: black; /* Icon color */
+    font-size: 1.5em; /* Change icon size */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-icons .fa:hover {
+    color: #0056b3; /* Change color on hover */
+}
+.custom_icon_header{
+    padding-right: 30%;
+}
+
+.icon-header a {
+    color: #000; /* Đặt màu sắc bạn muốn, ở đây là màu đen */
+    text-decoration: none; /* Nếu bạn cũng muốn loại bỏ gạch chân */
+}
+
+/* Để giữ hiệu ứng khi hover */
+.icon-header a:hover {
+    color: #555; /* Màu sắc khi hover, thay đổi tùy ý */
+}
+
+.custom-link-color {
+    color: #000; /* Đặt màu sắc bạn muốn, ở đây là màu đen */
+    text-decoration: none; /* Nếu bạn cũng muốn loại bỏ gạch chân */
+}
+
+/* Để giữ hiệu ứng khi hover */
+.custom-link-color:hover {
+    color: #555; /* Màu sắc khi hover, thay đổi tùy ý */
+}
+
+.cover_icon_menu{
+    padding-right: 20px;
+}
+/* đường line */
+.line {
+    border-bottom: 1px solid #e6e6e6;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   /* cách lề trái và phải 20% */
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.input-shift-left {
+    transform: translateX(-20%);
+    width: 250px; /* Điều chỉnh theo nhu cầu */
+    padding: 10px;
+    border: 1px solid #ddd; /* Màu biên */
+    border-radius: 5px; /* Làm mượt góc */
+    background-color: #fff; /* Màu nền */
+}
+
+.cover_menu_repo {
+    display: none;
+}
+
+/* Hiệu ứng khi rê chuột và khi ô được chọn */
+.input-shift-left:hover, .input-shift-left:focus {
+    border-color: #3C5B2D; /* Thay đổi màu biên khi hover hoặc focus */
+    box-shadow: 0 0 8px rgba(123, 255, 0, 0.2); /* Thêm bóng mờ nhẹ */
+    outline: none; /* Loại bỏ đường viền mặc định khi focus */
+}
+
+/* Ẩn ô nhập liệu trên màn hình có độ rộng dưới 1024px */
+@media (max-width: 1227px) {
+    .input-shift-left {
+        display: none !important;
+    }
+ 
+}
+/* Điều chỉnh bố cục cho màn hình điện thoại */
+@media (max-width: 768px) {
+    .navbar-icons {
+        padding-left: 3%;
+        display: block;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cover_menu_repo{
+        display: block;
+    }
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-rightL:10%;
+    }
+} 
